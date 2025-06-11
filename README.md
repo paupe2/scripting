@@ -1,6 +1,6 @@
-# Mis Scripts de Wi-Fi
+# Mis Scripts
 
-Este repositorio contiene varios scripts para gestionar redes Wi-Fi en Windows.
+Este repositorio contiene scripts de varios tipos.
 
 ## Scripts incluidos
 
