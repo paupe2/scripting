@@ -1,4 +1,3 @@
-# Obtener perfiles WiFi guardados
 $profiles = netsh wlan show profiles | Select-String "Perfil de todos los usuarios" | ForEach-Object {
     ($_ -split ":")[1].Trim()
 }
@@ -8,7 +7,6 @@ if (-not $profiles) {
     exit
 }
 
-# Mostrar menú
 Write-Host "Redes Wi-Fi guardadas:"
 for ($i=0; $i -lt $profiles.Count; $i++) {
     Write-Host "$($i+1). $($profiles[$i])"
@@ -31,4 +29,3 @@ if ($key_line) {
 } else {
     Write-Host "No se encontró contraseña o está vacía."
 }
-
